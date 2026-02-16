@@ -38,13 +38,18 @@ We do not just "chat" with AI. We follow a strict operating loop to ensure quali
 2.  **Plan**: Outline the steps and expected outputs.
 3.  **Run**: Execute the plan (using Agents and Skills).
 4.  **Review**: Validate the output against a Rubric.
-5.  **Bank**: Save the artifact and learnings back to the repo.
+5.  **Bank**: Save the artifact and learnings back to the repo, including a run ledger entry.
 
 *See `/S20-workflows/workflow-context-to-output.md` for the detailed guide.*
+
+*See `/S20-workflows/workflow-trigger-to-repo.md` for project startup from trigger/PRD to initialized repo.*
+
 
 ---
 
 ## 🚀 Getting Started
+
+*Start here: `/S00-foundation/onboarding.md`*
 
 ### For Humans
 1.  **Use this Template**: Click "Use this template" to start a new project.
