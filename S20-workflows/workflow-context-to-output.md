@@ -12,7 +12,7 @@ To systematically transform initial context and constraints into a verified, hig
 2.  **Create a Plan**: Outline the specific steps, tasks, and expected outputs required to achieve the goal.
 3.  **Execute the Run**: Perform the work according to the plan, generating intermediate and final artifacts.
 4.  **Review Output**: Evaluate the results against the original constraints and a quality rubric.
-5.  **Bank Learnings**: Document insights, improved prompts, or reusable snippets back into the system for future use.
+5.  **Bank Learnings**: Document insights, improved prompts, or reusable snippets back into the system for future use, and log run outputs in the run ledger.
 
 ## Context Pack
 *   **Sources**: URLs, files, or snippets provided as input.
@@ -34,6 +34,7 @@ To systematically transform initial context and constraints into a verified, hig
 
 ## Bank
 *   **Save Learnings**: Update `skills.md` or `agents.md` if the process revealed a better way to work.
+*   **Update Ledger**: Append run details to `artifacts/run-ledger.md` using `S20-workflows/run-ledger-schema.md`.
 *   **Archive**: Store successful prompts or patterns.
 
 ## Outputs
