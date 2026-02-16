@@ -1,5 +1,9 @@
 # Example Run: Idea to Repo
 
+- **Status:** reviewed
+- **Owner:** example-curator
+- **Last Updated:** 2026-02-16
+
 ## Fake project idea
 **Idea:** Build a lightweight “Paper Pulse” digest that summarizes new research notes every Friday.
 
@@ -15,7 +19,7 @@
 ## 2. PRD Source Traceability
 - **Primary Source:** Weekly research sync notes
 - **Supporting Sources:** Slack intake thread; prior digest doc
-- **Source Links / File Paths:** `/S90-assets/bonus-lesson-clip-map.md` (reference format only)
+- **Source Links / File Paths:** `../S90-assets/bonus-lesson-clip-map.md` (reference format only)
 
 ## 3. Problem Statement
 Research updates are scattered; teams need one reliable weekly summary artifact.

@@ -1,5 +1,9 @@
 # Trigger Sources
 
+- **Status:** reviewed
+- **Owner:** operations-agent
+- **Last Updated:** 2026-02-16
+
 ## Overview
 The PRD is the trigger object for starting work. The source of that PRD can vary (Notion, Slack, or manual entry), but each source should map into the same Trigger-to-Repo workflow and produce the same startup artifacts.
 
@@ -22,13 +26,13 @@ The PRD is the trigger object for starting work. The source of that PRD can vary
 
 ### Expected automation steps
 1. Create (or select) the target repository.
-2. Copy PRD fields into `docs/prd.md` using `/S20-workflows/templates/prd-template.md`.
+2. Copy PRD fields into `docs/prd.md` using `./templates/prd-template.md`.
 3. Create initial issues/tasks from requirements and milestones.
 4. Create a Codex kickoff file (context + first-run checklist).
 
 ### Manual fallback (if automation is not wired)
 1. Export/copy the Notion PRD content.
-2. Run `/S20-workflows/workflow-trigger-to-repo.md` manually.
+2. Run `./workflow-trigger-to-repo.md` manually.
 3. Paste PRD into `docs/prd.md` and commit startup files.
 4. Open in Codex and run first cycle.
 
@@ -53,8 +57,8 @@ Status: Ready
 
 ### Manual fallback steps
 1. Copy Slack message into a local PRD draft.
-2. Use `/S20-workflows/templates/prd-template.md` to normalize fields.
-3. Execute `/S20-workflows/workflow-trigger-to-repo.md` manually.
+2. Use `./templates/prd-template.md` to normalize fields.
+3. Execute `./workflow-trigger-to-repo.md` manually.
 4. Commit and begin first run.
 
 ## 3) Manual (local or GitHub)
@@ -63,13 +67,13 @@ Status: Ready
 2. Keep the same section structure (`S00`, `S10`, `S20`, `S30`, `S90`).
 
 ### Where to paste PRD
-- Paste PRD content into `docs/prd.md` in the new project using `/S20-workflows/templates/prd-template.md`.
+- Paste PRD content into `docs/prd.md` in the new project using `./templates/prd-template.md`.
 
 ### How to start the first run
-1. Execute `/S20-workflows/workflow-trigger-to-repo.md` to confirm startup artifacts.
+1. Execute `./workflow-trigger-to-repo.md` to confirm startup artifacts.
 2. Open the project in Codex.
-3. Run `/S20-workflows/workflow-context-to-output.md`.
-4. Close with `/.codex/skills/save-bank/SKILL.md` and append the ledger row.
+3. Run `./workflow-context-to-output.md`.
+4. Close with `../.codex/skills/save-bank/SKILL.md` and append the ledger row.
 
 ## Security and permissions notes
 - Follow existing tiering and approval boundaries from repo guidance (for example, Tier 2 permission requirements for sensitive foundation/primitives changes).
