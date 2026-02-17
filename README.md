@@ -49,6 +49,8 @@ We do not just "chat" with AI. We follow a strict operating loop to ensure quali
 
 ## 🚀 Getting Started
 
+*Start here: `S00-foundation/onboarding.md`*
+
 ### For Humans
 1.  **Use this Template**: Click "Use this template" to start a new project.
 2.  **Define your Goal**: Create a new issue or task.

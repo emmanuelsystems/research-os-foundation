@@ -1,5 +1,9 @@
 # Workflow: Context to Output (The "Do The Thing")
 
+- **Status:** reviewed
+- **Owner:** operations-agent
+- **Last Updated:** 2026-02-16
+
 ## Goal
 To systematically transform initial context and constraints into a verified, high-quality output artifact, ensuring reproducibility and quality control.
 
@@ -35,6 +39,7 @@ To systematically transform initial context and constraints into a verified, hig
 ## Bank
 *   **Save Learnings**: Update `skills.md` or `agents.md` if the process revealed a better way to work.
 *   **Update Ledger**: Append run details to `artifacts/run-ledger.md` using `S20-workflows/run-ledger-schema.md`.
+*   **Ledger Contract**: Use `S20-workflows/run-ledger-schema.md` as the table contract for ledger entries.
 *   **Archive**: Store successful prompts or patterns.
 
 ## Outputs
