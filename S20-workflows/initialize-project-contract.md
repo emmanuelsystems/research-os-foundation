@@ -65,6 +65,8 @@ Every `initialize_project` run must end with:
 3. **Skipped:** protected or intentionally unchanged paths.
 4. **Warnings:** missing inputs, overwrite prevention events, or policy conflicts.
 5. **Next suggested action:** first executable task after initialization.
+6. **Path audit:** map each created or updated path to the canonical routing rule in `S00-foundation/save-map.md`.
 
 ## Source Routing
 Use `S00-foundation/save-map.md` as the routing table for artifact destinations.
+Path audits in the Run Report must reference the applicable save-map rules.
