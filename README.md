@@ -66,6 +66,12 @@ We do not just "chat" with AI. We follow a strict operating loop to ensure quali
 
 *Start here: `S00-foundation/onboarding.md`*
 
+### START HERE
+1. Integration surfaces and bootstrap seam: `S00-foundation/INTEGRATIONS.md`
+2. Bank state criteria: `S00-foundation/banking-definition.md`
+3. Bootstrap contract: `S20-workflows/initialize-project-contract.md`
+4. Runtime note: `initialize_project` is invocation-contract based and can run from Codex, OpenClaw, Slack, or Telegram trigger flows.
+
 ### For Humans
 1.  **Use this Template**: Click "Use this template" to start a new project.
 2.  **Define your Goal**: Create a new issue or task.
