@@ -2,9 +2,9 @@
 
 - **Status:** draft
 - **Owner:** qa-agent
-- **Last Updated:** 2026-02-18
+- **Last Updated:** 2026-02-19
 
-## Canonical Artifact List and Paths
+## Exact Canonical Artifact List and Paths
 - `S00-foundation/prd.md`
 - `S00-foundation/context.md`
 - `S20-workflows/project-plan.md`
@@ -16,46 +16,62 @@
 - `tests/`
 - Run Report (validation runs): `S30-examples/test-runs/YYYY-MM-DD-initialize-project-prd-0X-run-report.md`
 
-## Required Sections Per Artifact
+## Required Section Headers Per Artifact (Minimal Schema)
 ### `S00-foundation/prd.md`
-- Title and metadata block (Status, Owner, Last Updated).
-- Sections defined in `S20-workflows/templates/prd-template.md`.
+- `# Product Requirements Document (PRD)`
+- `## 1. Document Control`
+- `## 2. PRD Source Traceability`
+- `## 3. Problem Statement`
+- `## 4. Goals`
+- `## 10. Constraints`
 
 ### `S00-foundation/context.md`
-- Title and metadata block (Status, Owner, Last Updated).
-- `PRD Content` section that embeds a full PRD based on the template.
+- `# Project Context:`
+- metadata block with Status, Owner, Last Updated
+- `## PRD Content`
 
 ### `S20-workflows/project-plan.md`
-- Title and metadata block (Status, Owner, Last Updated).
-- Objective.
-- Phases.
-- Milestones.
-- First Implementation Tasks.
+- `# Project Plan`
+- `## Objective`
+- `## Phases`
+- `## Milestones`
+- `## First Implementation Tasks`
 
 ### `S20-workflows/run-ledger.md`
-- Title and metadata block (Status, Owner, Last Updated).
-- Table header matching `S20-workflows/run-ledger-schema.md`.
-- One new appended row per run.
+- `# Run Outputs Ledger`
+- table header matching `S20-workflows/run-ledger-schema.md`
+- exactly one appended row per run
 
 ### `S20-workflows/task.md`
-- Title and metadata block (Date, Author, Status).
-- Checklist items for the first execution cycle.
+- `# Task List`
+- metadata block with Date, Author, Status
+- checklist entries present
 
 ### `README.md`
-- Only the summary block between `<!-- PROJECT_SUMMARY_START -->` and `<!-- PROJECT_SUMMARY_END -->` is updated.
+- only text between `<!-- PROJECT_SUMMARY_START -->` and `<!-- PROJECT_SUMMARY_END -->` may change
 
 ### `.gitignore`
-- File exists and is only additively updated.
+- file exists
+- additive updates only
 
 ### `src/` and `tests/`
-- Directories exist at repo root.
+- directories exist at repo root
 
 ### Run Report
 - Follows `S10-primitives/RUN-REPORT-TEMPLATE.md`.
-- Includes Created, Updated, Skipped, Warnings, Next suggested action.
-- Includes Path audit mapping every created or updated path to the save-map rule.
+- Includes `Created`, `Updated`, `Skipped`, `Warnings`, `Next`.
+- Includes `Verification Checks`.
+- Includes `Path Audit` mapping every created or updated path to the save-map rule.
 
 ## Naming Conventions
 - Run Reports: `YYYY-MM-DD-initialize-project-prd-0X-run-report.md`.
 - Versioned artifacts: append `-v2`, `-v3`, etc. when material changes occur.
 - Use lowercase kebab-case filenames.
+
+## Protected Marker Expectations
+- README updates must remain inside protected summary markers only.
+- No edits to protected sections listed in `S20-workflows/initialize-project-contract.md`.
+
+## Evaluation References
+- Run report schema: `S10-primitives/RUN-REPORT-TEMPLATE.md`
+- Bank criteria: `S00-foundation/banking-definition.md`
