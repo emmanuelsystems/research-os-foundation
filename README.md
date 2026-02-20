@@ -5,7 +5,7 @@
 
 <!-- RULE: initialize_project may only update text inside the summary block below. -->
 <!-- PROJECT_SUMMARY_START -->
-Research OS Foundation is a codex-first operating system for agentic work. Goal: provide a repeatable structure of primitives, workflows, and artifacts so teams can move from idea to reviewable, bankable outputs with traceability.
+Project `internal-notes-assistant` initializes a lightweight, searchable internal notes assistant for weekly operations updates. Goal: centralize markdown ops notes, support keyword/tag search, and generate weekly markdown summaries within a 2-week, no-external-integration v1 scope owned by `ops-team`.
 <!-- PROJECT_SUMMARY_END -->
 
 ---
