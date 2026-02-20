@@ -74,6 +74,7 @@ We do not just "chat" with AI. We follow a strict operating loop to ensure quali
 5. Validation runbook: `S20-workflows/validate_initialize_project.md`
 6. PRD fixture pack: `S30-examples/test_prds/`
 7. Expected output spec: `S30-examples/expected_outputs/initialize_project_expected.md`
+8. Team quickstart + test guide: `S20-workflows/team-quickstart-and-test-guide.md`
 
 ### For Humans
 1.  **Use this Template**: Click "Use this template" to start a new project.
