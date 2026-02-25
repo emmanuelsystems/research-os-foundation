@@ -2,7 +2,7 @@
 
 - **Date:** 2026-02-25
 - **Owner:** ops-team
-- **Status:** ready to run
+- **Status:** completed
 - **Goal:** Trigger `initialize_project` from Slack and verify canonical repo outputs.
 
 ## Preconditions (Current State)
@@ -59,35 +59,42 @@ Need proof that Slack can trigger OpenClaw and persist outputs to correct repo p
 ```
 
 ## Step 2: Wait for OpenClaw Response
-- [ ] Confirm OpenClaw acknowledges run start/completion in Slack.
-- [ ] Capture Slack timestamp/thread link as evidence.
+- [x] Confirm OpenClaw acknowledges run start/completion in Slack.
+- [x] Capture Slack timestamp/thread link as evidence.
 
 ## Step 3: Repo Validation (Run Immediately After Slack Response)
-- [ ] Check modified files:
+- [x] Check modified files:
   - `git status --short`
-- [ ] Verify canonical outputs changed only where expected:
+- [x] Verify canonical outputs changed only where expected:
   - `S00-foundation/prd*.md`
   - `S00-foundation/context*.md`
   - `S20-workflows/project-plan*.md`
   - `S20-workflows/task.md`
   - `S20-workflows/run-ledger.md`
   - `README.md` summary block only
-- [ ] Verify no legacy writes:
+- [x] Verify no legacy writes:
   - `docs/prd.md`
   - `docs/project-plan.md`
   - `artifacts/run-ledger.md`
   - root `task.md`
 
 ## Step 4: Save Run Evidence
-- [ ] Save run report to:
-  - `S30-examples/test-runs/2026-02-25-openclaw-slack-prd-live-run-01.md`
-- [ ] Append one ledger row with new run id.
-- [ ] Record pass/fail for:
+- [x] Save run report to:
+  - `S30-examples/test-runs/2026-02-25-slack-live-prd-test-run-01.md`
+  - `S30-examples/test-runs/2026-02-25-slack-live-prd-test-run-02.md`
+  - `S30-examples/test-runs/2026-02-25-slack-live-prd-test-02-run-01.md`
+- [x] Append one ledger row with new run id.
+- [x] Record pass/fail for:
   - canonical artifact set,
   - README marker protection,
   - ledger append-only behavior,
   - legacy write check,
   - save-map routing followed.
+
+## Completed Run IDs
+- `2026-02-25-009` (Slack live trigger baseline)
+- `2026-02-25-010` (Slack live trigger re-run, idempotent)
+- `2026-02-25-011` (Slack live trigger run-02 with `slack-live-prd-test-02`)
 
 ## Pass Criteria
 - One Slack message triggers exactly one `initialize_project` run.
