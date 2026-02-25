@@ -20,3 +20,9 @@
 - [ ] Add an automated check to assert README summary marker boundary-only edits.
 - [ ] Add a validation check that fails on legacy path writes (`docs/`, `artifacts/`, root `task.md`).
 - [ ] Create a Day 2 verification checklist for Slack-triggered initialization runs.
+
+## 2026-02-25 initialize_project follow-up (slack-live-prd-test-02)
+- [ ] Define reproducibility acceptance criteria for consecutive Slack-triggered runs.
+- [ ] Add a deterministic filename policy for sequential run evidence artifacts.
+- [ ] Add a pre-write check that blocks updates if README markers are malformed.
+- [ ] Add a post-run script to verify one-row ledger append behavior per invocation.

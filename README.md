@@ -5,7 +5,7 @@
 
 <!-- RULE: initialize_project may only update text inside the summary block below. -->
 <!-- PROJECT_SUMMARY_START -->
-Project `slack-live-prd-test` validates end-to-end Slack-triggered PRD initialization into canonical Research OS paths. Goal: prove deterministic save-map routing, append-only ledger behavior, and README marker protection under `ops-team` ownership.
+Project `slack-live-prd-test-02` validates a second end-to-end Slack-triggered initialize_project run for reproducibility. Goal: confirm canonical routing, append-only ledger behavior, deterministic run reporting, and README marker protection under `ops-team` ownership.
 <!-- PROJECT_SUMMARY_END -->
 
 ---
