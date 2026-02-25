@@ -14,3 +14,9 @@
 - [ ] Create markdown intake folder and sample note set.
 - [ ] Implement keyword + tag search prototype and measure latency.
 - [ ] Implement weekly summary markdown generation workflow.
+
+## 2026-02-25 initialize_project follow-up (slack-live-prd-test)
+- [ ] Document a standard for storing Slack trigger source identifiers in run metadata.
+- [ ] Add an automated check to assert README summary marker boundary-only edits.
+- [ ] Add a validation check that fails on legacy path writes (`docs/`, `artifacts/`, root `task.md`).
+- [ ] Create a Day 2 verification checklist for Slack-triggered initialization runs.

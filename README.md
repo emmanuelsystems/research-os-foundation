@@ -5,7 +5,7 @@
 
 <!-- RULE: initialize_project may only update text inside the summary block below. -->
 <!-- PROJECT_SUMMARY_START -->
-Project `internal-notes-assistant` initializes a lightweight, searchable internal notes assistant for weekly operations updates. Goal: centralize markdown ops notes, support keyword/tag search, and generate weekly markdown summaries within a 2-week, no-external-integration v1 scope owned by `ops-team`.
+Project `slack-live-prd-test` validates end-to-end Slack-triggered PRD initialization into canonical Research OS paths. Goal: prove deterministic save-map routing, append-only ledger behavior, and README marker protection under `ops-team` ownership.
 <!-- PROJECT_SUMMARY_END -->
 
 ---
@@ -75,6 +75,65 @@ We do not just "chat" with AI. We follow a strict operating loop to ensure quali
 6. PRD fixture pack: `S30-examples/test_prds/`
 7. Expected output spec: `S30-examples/expected_outputs/initialize_project_expected.md`
 8. Team quickstart + test guide: `S20-workflows/team-quickstart-and-test-guide.md`
+
+### OpenClaw Initial Setup (Official Install Flow)
+Use the official installer from `openclaw.ai` / `docs.openclaw.ai`.
+
+#### Recommended: Installer script
+1. macOS / Linux / WSL2:
+   - `curl -fsSL https://openclaw.ai/install.sh | bash`
+2. Windows (PowerShell):
+   - `iwr -useb https://openclaw.ai/install.ps1 | iex`
+3. The installer handles Node detection, installation, and onboarding.
+
+#### Alternative: npm / pnpm install
+Use this if you prefer manual package-manager control:
+1. `npm install -g openclaw@latest`
+2. `openclaw onboard --install-daemon`
+
+or
+
+1. `pnpm add -g openclaw@latest`
+2. `pnpm approve-builds -g`
+3. `openclaw onboard --install-daemon`
+
+#### After install (official verification)
+1. `openclaw doctor`
+2. `openclaw status`
+3. `openclaw dashboard`
+
+#### Workspace attach for this repository
+1. `cd F:\Antigravity\research-os-foundation`
+2. Start OpenClaw in this workspace and attach to repo root.
+3. Confirm runtime state file exists: `.openclaw/workspace-state.json`
+4. Run the canonical preflight checklist below before PRD validation.
+
+### OpenClaw Setup (Canonical Preflight)
+Run these checks in order before executing PRD validations:
+1. Confirm runtime root path is this repository (`pwd` should resolve to repo root).
+2. Confirm runtime identity is visible (`whoami`, `hostname`).
+3. Confirm heartbeat mode:
+   - `HEARTBEAT.md` empty/comments only = no active heartbeat tasks.
+   - Non-empty task list = periodic checks are expected.
+4. Confirm callable tools used by this workflow (`rg`, `git`, `powershell`).
+5. Confirm canonical files are readable:
+   - `S20-workflows/initialize-project-contract.md`
+   - `S00-foundation/save-map.md`
+   - `S00-foundation/legacy-artifacts.md`
+   - `S20-workflows/validate_initialize_project.md`
+   - `S10-primitives/RUN-REPORT-TEMPLATE.md`
+6. Confirm README marker integrity (exactly one each):
+   - `<!-- PROJECT_SUMMARY_START -->`
+   - `<!-- PROJECT_SUMMARY_END -->`
+7. Use canonical invocation text:
+   - `Run initialize_project using provided PRD block.`
+8. Save each run report to `S30-examples/test-runs/` using dated filenames.
+
+### OpenClaw Troubleshooting
+1. If README markers are missing/duplicated, stop and repair marker boundaries before running `initialize_project`.
+2. If tool discovery differs by shell/runtime, document the command and executable path in the run report.
+3. If file create succeeds but move/delete fails, log it as environment behavior and keep validation artifacts in canonical paths.
+4. If any write targets legacy paths (`docs/`, `artifacts/`, root `task.md`), mark run as FAIL and route fixes to `S00-foundation/save-map.md` and `S20-workflows/initialize-project-contract.md`.
 
 ### For Humans
 1.  **Use this Template**: Click "Use this template" to start a new project.
