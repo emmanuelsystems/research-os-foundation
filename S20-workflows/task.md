@@ -26,3 +26,9 @@
 - [ ] Add a deterministic filename policy for sequential run evidence artifacts.
 - [ ] Add a pre-write check that blocks updates if README markers are malformed.
 - [ ] Add a post-run script to verify one-row ledger append behavior per invocation.
+
+## 2026-02-26 initialize_project follow-up (day3-prd01-repeat-a)
+- [ ] Add deterministic normalization rules for Slack batch PRD payloads.
+- [ ] Add a regression check that compares run-report structure across repeat runs.
+- [ ] Add an automated guard that blocks non-canonical write targets before file operations.
+- [ ] Add a ledger integrity test that validates append-only behavior for run `2026-02-26-012`.
