@@ -5,7 +5,7 @@
 
 <!-- RULE: initialize_project may only update text inside the summary block below. -->
 <!-- PROJECT_SUMMARY_START -->
-Project `day3-prd01-repeat-a` runs PRD-01 repeatability test A through Slack trigger. Goal: reconfirm deterministic initialize_project behavior with canonical-path-only routing, append-only ledger evidence, and protected README summary markers under `ops-team` ownership.
+Project `day3-prd02-standard` validates PRD-02 standard scenario through Slack trigger. Goal: confirm cross-fixture deterministic initialize_project behavior with canonical-path-only routing, append-only ledger evidence, and protected README summary markers under `ops-team` ownership.
 <!-- PROJECT_SUMMARY_END -->
 
 ---

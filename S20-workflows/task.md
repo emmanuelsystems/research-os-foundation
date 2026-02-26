@@ -32,3 +32,9 @@
 - [ ] Add a regression check that compares run-report structure across repeat runs.
 - [ ] Add an automated guard that blocks non-canonical write targets before file operations.
 - [ ] Add a ledger integrity test that validates append-only behavior for run `2026-02-26-012`.
+
+## 2026-02-26 initialize_project follow-up (day3-prd02-standard)
+- [ ] Add fixture-profile coverage checks so PRD-02 runs are validated alongside PRD-01 repeats.
+- [ ] Add a deterministic schema comparator across PRD fixture run reports.
+- [ ] Add a pre-write gate that rejects non-canonical path candidates during batch execution.
+- [ ] Add a ledger integrity test that validates append-only behavior for run `2026-02-26-013`.
