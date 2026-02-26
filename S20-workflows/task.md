@@ -38,3 +38,9 @@
 - [ ] Add a deterministic schema comparator across PRD fixture run reports.
 - [ ] Add a pre-write gate that rejects non-canonical path candidates during batch execution.
 - [ ] Add a ledger integrity test that validates append-only behavior for run `2026-02-26-013`.
+
+## 2026-02-26 initialize_project follow-up (day3-prd03-sensitive)
+- [ ] Add a standard warning taxonomy for sensitive constraint detection in run reports.
+- [ ] Add validation checks that fail if sensitive constraints are present but warnings are omitted.
+- [ ] Add a preflight gate to ensure sensitive constraints are echoed in run metadata.
+- [ ] Add a ledger integrity test that validates append-only behavior for run `2026-02-26-015`.

@@ -5,7 +5,7 @@
 
 <!-- RULE: initialize_project may only update text inside the summary block below. -->
 <!-- PROJECT_SUMMARY_START -->
-Project `day3-prd02-standard` validates PRD-02 standard scenario through Slack trigger. Goal: confirm cross-fixture deterministic initialize_project behavior with canonical-path-only routing, append-only ledger evidence, and protected README summary markers under `ops-team` ownership.
+Project `day3-prd03-sensitive` validates sensitive-mode style PRD handling through Slack trigger. Goal: confirm canonical-path-only initialize_project routing/reporting with append-only ledger evidence, protected README summary markers, and explicit sensitive-constraint warning surfacing under `ops-team` ownership.
 <!-- PROJECT_SUMMARY_END -->
 
 ---
