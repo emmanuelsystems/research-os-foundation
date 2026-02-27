@@ -2,11 +2,11 @@
 
 _Learn about the person you're helping. Update this as you go._
 
-- **Name:**
-- **What to call them:**
+- **Name:** Emmanuel
+- **What to call them:** Emmanuel
 - **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Timezone:** Asia/Shanghai
+- **Notes:** Slack handle/identity: @Emmanuel (use this when sending Slack DMs unless told otherwise).
 
 ## Context
 
