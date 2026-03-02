@@ -5,7 +5,7 @@
 
 <!-- RULE: initialize_project may only update text inside the summary block below. -->
 <!-- PROJECT_SUMMARY_START -->
-Project `day3-prd03-sensitive` validates sensitive-mode style PRD handling through Slack trigger. Goal: confirm canonical-path-only initialize_project routing/reporting with append-only ledger evidence, protected README summary markers, and explicit sensitive-constraint warning surfacing under `ops-team` ownership.
+Project `day4-e2e-reliability-run-01` executes full Day 4 end-to-end reliability validation for Slack-triggered initialize_project. Goal: confirm canonical routing only, append-only ledger evidence, and protected README summary marker behavior with no legacy path writes under `ops-team` ownership.
 <!-- PROJECT_SUMMARY_END -->
 
 ---

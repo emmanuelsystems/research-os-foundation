@@ -44,3 +44,9 @@
 - [ ] Add validation checks that fail if sensitive constraints are present but warnings are omitted.
 - [ ] Add a preflight gate to ensure sensitive constraints are echoed in run metadata.
 - [ ] Add a ledger integrity test that validates append-only behavior for run `2026-02-26-015`.
+
+## 2026-03-02 initialize_project follow-up (day4-e2e-reliability-run-01)
+- [ ] Execute `S20-workflows/validate_initialize_project.md` acceptance checklist and record reviewer notes.
+- [ ] Add an automated assertion that the verification command set is captured in each Day 4 reliability report.
+- [ ] Add regression coverage for canonical naming checks across Slack-triggered run sequences.
+- [ ] Add a ledger integrity test that validates append-only behavior for run `2026-02-27-016`.
