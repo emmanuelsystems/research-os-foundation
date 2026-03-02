@@ -6,10 +6,10 @@
 - **Goal:** Complete Day 4 with verified reliability, hardening snapshot, and final wrap-up evidence.
 
 ## Block 1: End-to-End Reliability Run (Run-01)
-- [ ] Post Day 4 PRD trigger in Slack using payload below.
-- [ ] Confirm OpenClaw posts run completion in Slack.
-- [ ] Verify canonical outputs and append-only ledger behavior.
-- [ ] Save run report evidence artifact.
+- [x] Post Day 4 PRD trigger in Slack using payload below.
+- [x] Confirm OpenClaw posts run completion in Slack.
+- [x] Verify canonical outputs and append-only ledger behavior.
+- [x] Save run report evidence artifact.
 
 ### Slack Payload (Copy/Paste)
 ```text
@@ -65,38 +65,38 @@ Get-ChildItem S30-examples/test-runs/2026-02-27-*.md | Select Name,LastWriteTime
 ```
 
 ### Block 1 Pass Criteria
-- [ ] New ledger row appended once.
-- [ ] New run report saved in `S30-examples/test-runs/`.
-- [ ] `Canonical Naming Check: PASS`.
-- [ ] `Legacy Write Check: PASS`.
-- [ ] `README Protected Markers Only: PASS`.
-- [ ] `Ledger Append (No Overwrite): PASS`.
+- [x] New ledger row appended once.
+- [x] New run report saved in `S30-examples/test-runs/`.
+- [x] `Canonical Naming Check: PASS`.
+- [x] `Legacy Write Check: PASS`.
+- [x] `README Protected Markers Only: PASS`.
+- [x] `Ledger Append (No Overwrite): PASS`.
 
 ## Block 2: Runtime Hardening Snapshot
-- [ ] Capture current runtime evidence:
+- [x] Capture current runtime evidence:
   - `openclaw status --all`
   - `openclaw doctor`
   - `openclaw security audit`
-- [ ] Record remaining warnings + impact.
-- [ ] Save artifact:
+- [x] Record remaining warnings + impact.
+- [x] Save artifact:
   - `S30-examples/test-runs/2026-02-27-day4-runtime-hardening-snapshot.md`
 
 ## Block 3: Security Disposition
-- [ ] Classify each warning as:
+- [x] Classify each warning as:
   - fixed now, or
   - accepted risk with owner and due date.
-- [ ] Save artifact:
+- [x] Save artifact:
   - `S30-examples/test-runs/2026-02-27-day4-security-disposition.md`
 
 ## Block 4: Final Wrap-Up
-- [ ] Summarize day outcome and recommendation.
-- [ ] Save final artifact:
+- [x] Summarize day outcome and recommendation.
+- [x] Save final artifact:
   - `S30-examples/test-runs/2026-02-27-day4-final-wrap-up.md`
-- [ ] Ensure ledger row exists for Day 4 closeout evidence.
+- [x] Ensure ledger row exists for Day 4 closeout evidence.
 
 ## Done Criteria
-- [ ] Block 1 PASS
-- [ ] Block 2 artifact saved
-- [ ] Block 3 artifact saved
-- [ ] Block 4 artifact saved
+- [x] Block 1 PASS
+- [x] Block 2 artifact saved
+- [x] Block 3 artifact saved
+- [x] Block 4 artifact saved
 - [ ] All Day 4 evidence committed and pushed

@@ -46,6 +46,14 @@
 - `S30-examples/test-runs/2026-02-27-day4-execution-plan.md`
 - `S30-examples/test-runs/2026-02-27-day4-implementation-checklist.md`
 - `S30-examples/test-runs/2026-02-27-day4-e2e-run-01.md`
+- `S30-examples/test-runs/2026-02-27-day4-runtime-hardening-snapshot.md`
+- `S30-examples/test-runs/2026-02-27-day4-security-disposition.md`
+- `S30-examples/test-runs/2026-02-27-day4-final-wrap-up.md`
+
+## Day 5 Closeout (2026-03-02)
+- `S30-examples/test-runs/2026-03-02-invalid-payload-rejection-run-01.md`
+- `S30-examples/test-runs/2026-03-02-day4-review-packet.md`
+- `S30-examples/test-runs/2026-03-02-multi-day-progress-summary.md`
 
 ## Notes
 - Canonical run-report convention remains unchanged: save run evidence under `S30-examples/test-runs/`.
